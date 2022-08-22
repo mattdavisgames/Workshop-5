@@ -8,6 +8,8 @@ using UnityEngine;
 [RequireComponent(typeof(MeshRenderer))]
 public class GenerateCube : MonoBehaviour
 {
+    public Shader SolidColorShader;
+
     private void Start()
     {
         // Generate the mesh and assign to the mesh filter.
@@ -19,7 +21,7 @@ public class GenerateCube : MonoBehaviour
         // Recall how we set the material's "color" in the first workshop:
         // e.g. material.color = ...;
         // Turns out we can also set the material's shader in a similar way:
-        material.shader = null;
+        material.shader = SolidColorShader;
     }
 
     private Mesh CreateMesh()
