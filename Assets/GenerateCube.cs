@@ -8,7 +8,7 @@ using UnityEngine;
 [RequireComponent(typeof(MeshRenderer))]
 public class GenerateCube : MonoBehaviour
 {
-    public Shader SolidColorShader;
+    public Shader Shader;
 
     private void Start()
     {
@@ -21,7 +21,7 @@ public class GenerateCube : MonoBehaviour
         // Recall how we set the material's "color" in the first workshop:
         // e.g. material.color = ...;
         // Turns out we can also set the material's shader in a similar way:
-        material.shader = SolidColorShader;
+        material.shader = Shader;
     }
 
     private void Update() {
