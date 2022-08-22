@@ -24,6 +24,12 @@ public class GenerateCube : MonoBehaviour
         material.shader = SolidColorShader;
     }
 
+    private void Update() {
+        var material = GetComponent<MeshRenderer>().material;
+        var color = Color.HSVToRGB(Time.time % 1f, 0.7f, 1.0f);
+        material.color = color;
+    }
+
     private Mesh CreateMesh()
     {
         // You might need to re-visit workshop 2 for a recap on mesh structures!
