@@ -147,7 +147,7 @@ public class GenerateCube : MonoBehaviour
             Color.blue,
 
             // Back face
-            Color.blue,
+            Color.green,
             Color.blue,
             Color.blue,
 
