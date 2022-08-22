@@ -9,6 +9,7 @@ using UnityEngine;
 public class GenerateCube : MonoBehaviour
 {
     public Shader Shader;
+    public Texture Texture;
 
     private void Start()
     {
@@ -22,6 +23,7 @@ public class GenerateCube : MonoBehaviour
         // e.g. material.color = ...;
         // Turns out we can also set the material's shader in a similar way:
         material.shader = Shader;
+        material.mainTexture = Texture;
     }
 
     private void Update() {
