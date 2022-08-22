@@ -23,6 +23,9 @@ public class GenerateCube : MonoBehaviour
         // e.g. material.color = ...;
         // Turns out we can also set the material's shader in a similar way:
         material.shader = Shader;
+
+        // Same as:
+        //material.SetTexture("_MainTex", Texture);
         material.mainTexture = Texture;
     }
 
